@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html lang=en>
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css"/>
+    <script src="main.js"></script>
+    <title>Blindtest Score</title>
+</head>
+
+<body>
+    
+    <div class="mainFrame">
+
+        <div class="playerAndPlayers">
+
+            <div class="ytPlayer">
+                <div class="ytContainer">
+                    <iframe src="https://www.youtube.com/embed/" 
+                    frameborder="0" allowfullscreen class="video"></iframe>
+                </div>
+            </div>
+
+
+            <div class="playersFrame">
+
+                <div class="playerFrame">
+
+                    <div class="playerAvatar"></div>
+                    <div class="playerName"><input type="text" id="player0.name" value="Player 1"/></div>
+                    <div class="playerScore"><span id="player0Score">0</span></div>
+                    <div class="playerScoreButton"><input type="button" id="player1Button" onclick="scoreUp(0)" value="+1"/></div>
+
+                </div>
+
+                <div class="playerFrame">
+
+                    <div class="playerAvatar"></div>
+                    <div class="playerName"><input type="text" id="player1.name" value="Player 2"/></div>
+                    <div class="playerScore"><span id="player1Score">0</span></div>
+                    <div class="playerScoreButton"><input type="button" id="player2Button" onclick="scoreUp(1)" value="+1"/></div>
+                    
+                </div>
+                
+                <div class="playerFrame">
+
+                    <div class="playerAvatar"></div>
+                    <div class="playerName"><input type="text" id="player2.name" value="Player 3"/></div>
+                    <div class="playerScore"><span id="player2Score">0</span></div>
+                    <div class="playerScoreButton"><input type="button" id="player3Button" onclick="scoreUp(2)" value="+1"/></div>
+                    
+                </div>
+                
+                <div class="playerFrame">
+
+                    <div class="playerAvatar"></div>
+                    <div class="playerName"><input type="text" id="player3.name" value="Player 4"/></div>
+                    <div class="playerScore"><span id="player3Score">0</span></div>
+                    <div class="playerScoreButton"><input type="button" id="player4Button" onclick="scoreUp(3)" value="+1"/></div>
+                    
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="startButton">
+            <input type="button" onclick="createPlayers()" value="Start"/>
+        </div>
+
+
+
+
+
+        <div class="addressBarWrapper">
+
+            <div class="addressBar">
+                <input type="text" class="addressBar" id="addressBar" value="Paste URL and hit Submit"/>
+            </div>
+
+            <input type="button" class="submitVideoButton" id="submitVideoButton" value="Submit" onclick="submitVideo()"/>
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>

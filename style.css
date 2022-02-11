@@ -1,0 +1,136 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgba(20, 0, 20);
+}
+
+
+.mainFrame {
+    display: flex;
+    align-items: center;
+
+    flex-direction: column;
+
+}
+
+.playerAndPlayers {
+    display: flex;
+    flex-direction: row;
+}
+
+.addressBarWrapper {
+    width: 100%;
+    height: 5vw;
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+}
+
+
+.addressBar input {
+    width: fit-content;
+    height: fit-content;
+    background-color: white;
+    border-radius: 10px;
+    border: 4px outset violet;
+
+    font-size: 1rem;
+    text-align: left;
+}
+
+.submitVideoButton {
+    width: fit-content;
+    border: 4px outset violet;
+    border-radius: 10px;
+    height: fit-content;
+}
+
+
+.playersFrame {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+    width: 30vw;
+    height: fit-content;
+    margin: 5px;
+
+    gap: 5px;
+    background-color: rgba(101, 21, 104, 0.2);
+}
+
+.playerFrame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(245, 245, 245, 0.2);
+
+    padding: 15px 6px 20px 6px;
+    margin: 5px;
+}
+.playerAvatar {
+    width: 8vw;
+    height: 8vw;
+    background-color: grey;
+    max-height: 180px;
+}
+
+.playerName input {
+    width: 10vw;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    margin: 5px;
+    text-align: center;
+    width: 5vw;
+}
+
+.startButton input {
+    width: 10vw;
+}
+
+.playerScore span{
+    color: purple;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    background-color: transparent;
+    margin: 2px;
+}
+
+.playerScoreButton {
+    opacity: 0.9;
+}
+
+
+.ytPlayer {
+    width: 65vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-content: baseline;
+    justify-content: left;
+    margin: 10px 0px 0px 0px;
+    background-color: green;
+    border: 10px outset white;
+    
+}
+
+.ytContainer {
+    position: relative;
+    padding-bottom: 56.10%;
+    height: 0;
+    overflow: hidden;
+}
+
+.video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
