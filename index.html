@@ -15,11 +15,23 @@
 
         <div class="playerAndPlayers">
 
-            <div id="ytPlayer">
+            <div id="videoWrapper">
+
                 <div class="ytContainer">
                     <iframe src="https://www.youtube.com/embed/" 
                     frameborder="0" allowfullscreen id="video" plugin="true"></iframe>
                 </div>
+
+                <div class="addressBarWrapper">
+
+                    <div class="addressBar">
+                        <input type="text" class="addressBar" id="addressBar" value="YouTube URL"/>
+                    </div>
+        
+                    <input type="button" class="submitVideoButton" id="submitVideoButton" value="Submit" onclick="submitVideo()"/>
+        
+                </div>
+
             </div>
 
             <div class="playersFrame">
@@ -60,27 +72,21 @@
                     
                 </div>
 
+                <div class="startButton">
+                    <input type="button" onclick="createPlayers()" value="Start"/>
+                </div>
+
             </div>
 
         </div>
 
-        <div class="startButton">
-            <input type="button" onclick="createPlayers()" value="Start"/>
-        </div>
 
 
 
 
 
-        <div class="addressBarWrapper">
 
-            <div class="addressBar">
-                <input type="text" class="addressBar" id="addressBar" value="Paste URL and hit Submit"/>
-            </div>
 
-            <input type="button" class="submitVideoButton" id="submitVideoButton" value="Submit" onclick="submitVideo()"/>
-
-        </div>
 
 
     </div>

@@ -78,7 +78,6 @@ function submitVideo(){
   // Replace the URL inside the iframe
   let iframe = document.getElementById("video");
   iframe.src = url;
-
   
   
   
