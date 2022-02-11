@@ -107,7 +107,7 @@ input {
 }
 
 
-.ytPlayer {
+#ytPlayer {
     width: 65vw;
     height: fit-content;
     display: flex;

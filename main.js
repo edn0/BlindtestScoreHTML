@@ -74,12 +74,10 @@ function submitVideo(){
   url = ("https://www.youtube.com/embed/" + ID);
   console.log(url + ": url");
 
-  document.getElementById("video").contentWindow.location.reload(true);
 
   // Replace the URL inside the iframe
-  let iframe = document.getElementsById("video");
-
-
+  let iframe = document.getElementById("video");
+  iframe.src = url;
 
   
   
