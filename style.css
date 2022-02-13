@@ -43,7 +43,10 @@ input {
     border-radius: 10px;
 }
 
-.playerFrame {
+.playerFrame0,
+.playerFrame1,
+.playerFrame2,
+.playerFrame3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -53,13 +56,108 @@ input {
     padding: 15px 6px 20px 6px;
     margin: 5px;
 }
-.playerAvatar {
+
+#avatarFrame0,
+#avatarFrame1,
+#avatarFrame2,
+#avatarFrame3 {
+    width: 100%;
+    height: 76px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: center;
+
+    margin-bottom: 15px;
+    align-items: baseline;
+}
+
+#avatarFrame0:hover,
+#avatarFrame1:hover,
+#avatarFrame2:hover,
+#avatarFrame3:hover {
+    transform: scale(1.5);
+    width: 120%;
+    background-color: rgba(241, 203, 255, 0.9);
+    border: 5px solid rgba(255, 247, 213, 1);
+    padding: 5px;
+    margin: 5px;
+    animation: avatarFrameOpen 150ms ease-in forwards;
+}
+
+@keyframes avatarFrameOpen {
+    0% {width: 100%;}
+    50% {width: 125%;}
+    100% {width: 140%;}
+}
+
+.avatar0,
+.avatar1,
+.avatar2,
+.avatar3,
+.avatar4,
+.avatar5 {
     width: 64px;
     height: 64px;
-    background-color: grey;
     max-height: 180px;
-    border: 4px solid rgba(201, 201, 255, 1);
+    border: 4px solid rgba(255, 247, 213, 1);
+}
 
+
+.avatar0:hover,
+.avatar1:hover,
+.avatar2:hover,
+.avatar3:hover,
+.avatar4:hover,
+.avatar5:hover {
+    transform: scale(1.1);
+    border: 3px solid rgba(255, 247, 213, 1);
+}
+
+.avatarFull0,
+.avatarFull1,
+.avatarFull2,
+.avatarFull3,
+.avatarFull4,
+.avatarFull5 {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    width: 64px;
+    height: 64px;
+    border: 4px solid rgba(255, 247, 213, 1);
+    font-size: x-large;
+}
+
+.avatarFull0,
+.avatar0 {
+    background-color: paleturquoise;
+}
+
+.avatarFull1,
+.avatar1 {
+    background-color: #ffbdbd;
+}
+
+.avatarFull2,
+.avatar2 {
+    background-color: #c9c9ff;
+}
+
+.avatarFull3,
+.avatar3 {
+    background-color: #f1cbff;
+}
+
+.avatarFull4,
+.avatar4 {
+    background-color: #e1f7d5;
+}
+
+.avatarFull5,
+.avatar5 {
+    background-color: pink;
 }
 
 .playerName input {

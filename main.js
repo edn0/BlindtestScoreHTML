@@ -84,24 +84,20 @@ function submitVideo(){
 
 }
 
+function pickAvatar(playerID, avatarID) {
 
-/**
-* Get YouTube ID from various YouTube URL
-* @author: takien
-* @url: http://takien.com
-* For PHP YouTube parser, go here http://takien.com/864
-*/
+  avatarChosen = "avatar" + avatarID;
+  avatarFrame = "avatarFrame" + playerID;
+  // Fetch the player's avatarFrame
+  var list = document.getElementById(avatarFrame);
+  // Fetch the chosen avatar
+  avatarChosen = list.getElementsByClassName(avatarChosen);
 
-function YouTubeGetID(url){
-  var ID = '';
-  url = url.replace(/(>|<)/gi,'').split(/(vi\/|v=|\/v\/|youtu\.be\/|\/embed\/)/);
-  if(url[2] !== undefined) {
-    ID = url[2].split(/[^0-9a-z_\-]/i);
-    ID = ID[0];
-  }
-  else {
-    ID = url;
-  }
-    return ID;
+  // Fetch content of avatar frame and wipe it
+  var avatarFrameContent = document.getElementById(avatarFrame);
+  avatarFrameContent.innerHTML = "";
+  // And the insert the new avatar frame
+  var avatarInsert = document.createElement("div");
+  avatarInsert.className = "avatarFull" + avatarID;
+  avatarFrameContent.appendChild(avatarInsert);
 }
-
