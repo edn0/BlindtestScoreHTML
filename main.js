@@ -24,6 +24,10 @@ function createPlayers() {
       playersList[i] = new player(playersList[i], i, 0);
       console.log(playersList[i]);
   }
+  val = "Started"
+
+  document.getElementById("startButton").innerHTML = val;
+
 
   return playersList;
 }
