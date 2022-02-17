@@ -207,8 +207,9 @@ input {
     align-items: baseline;
 
 }
-.startButton input {
-    width: 10vw;
+#startButton input,
+#resetScoreButton input {
+    width: 5vw;
     border: 4px outset rgba(255, 247, 213, 1);
     border-radius: 10px;
     height: fit-content;

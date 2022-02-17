@@ -32,6 +32,7 @@ function createPlayers() {
   return playersList;
 }
 
+// Function used to increase player score by passing his playerID
 function scoreUp(playerID){
 
   // Select object in playerList by index
@@ -82,9 +83,6 @@ function submitVideo(){
   // Replace the URL inside the iframe
   let iframe = document.getElementById("video");
   iframe.src = url;
-  
-  
-  
 
 }
 
@@ -104,4 +102,13 @@ function pickAvatar(playerID, avatarID) {
   var avatarInsert = document.createElement("div");
   avatarInsert.className = "avatarFull" + avatarID;
   avatarFrameContent.appendChild(avatarInsert);
+}
+
+// Reset all players score
+function resetScores() {
+  for (let i in playersList){
+    playersList[i].score = 0;
+    let scoreLocation = "player" + i + "Score";
+    document.getElementById(scoreLocation).innerHTML = playersList[i].score;
+  }
 }
